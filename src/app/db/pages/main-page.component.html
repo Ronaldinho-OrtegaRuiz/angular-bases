@@ -1,0 +1,12 @@
+<h1>DB personajes</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <db-list [characterList]="characters"
+    (onDelete)="onDeleteCharacter($event)"></db-list>
+  </div>
+  <div class="col">
+    <db-add-character (onNewCharacter)="onNewCharacter($event)">
+    </db-add-character>
+  </div>
+</div>
